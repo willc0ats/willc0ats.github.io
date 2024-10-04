@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will Coats</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file if you have one -->
+</head>
+<body>
+        <h3>
+            <a href="willcoatshome.html">
+                <img src="website/willcoatslogo.png" alt="Header Image" class="header-image" width="300" height="auto">
+            </a>
+        </h3>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="willcoatsshop.html">Shop</a></li>
+                <li><a href="willcoatsportfolio1.html">Portfolio</a></li>
+                <li><a href="willcoatscontact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>
+    <main class="container">
+        <img id="imgClickAndChange" src="website/flagshorts.jpg" alt="flag" width="550" height="auto" onclick="changeImage()">
+    </main>
+    </h2>
+
+    <footer>
+        <!-- Your footer content -->
+    </footer>
+
+    <script>
+        function changeImage() {
+            const image = document.getElementById("imgClickAndChange"); // Corrected the ID
+            // Change the image source here
+            if (image.src.includes("flagshorts.jpg")) {
+                image.src = "website/persistency.jpg"; // Change to your second image
+            } else {
+                image.src = "website/flagshorts.jpg"; // Change back to the first image
+            }
+        }
+    </script>
+</body>
+</html>
